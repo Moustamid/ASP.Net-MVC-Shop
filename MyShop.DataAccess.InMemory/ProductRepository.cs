@@ -10,6 +10,9 @@ namespace MyShop.DataAccess.InMemory
 {
     public class ProductRepository
     {
+
+        
+
         ObjectCache cache = MemoryCache.Default;
         List<Product> products;
 
@@ -60,6 +63,8 @@ namespace MyShop.DataAccess.InMemory
             }
         }
 
+
+        //- return a List that can be queried :
         public IQueryable<Product> Collection() {
             return products.AsQueryable();
         }
