@@ -33,6 +33,13 @@ namespace MyShop.DataAccess.InMemory
             cache["products"] = products;
         }
 
+        //-Insert :
+
+        public void Insert(Product product)
+        {
+            products.Add(product);
+        }
+
 
         //-Update  :
         public void Update(Product product)
